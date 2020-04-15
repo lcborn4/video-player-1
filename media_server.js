@@ -2,7 +2,7 @@ var http = require('http'),
     fs = require('fs'),
     util = require('util');
 
-var path = "../video/AI_Battle1.mp4";
+var path = "../video/AI_Battle.mp4";
 
 var port = 3000;
 // var host = "localhost";
