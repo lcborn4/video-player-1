@@ -36,4 +36,4 @@ http.createServer(function (req, res) {
   }
 }).listen(port, () => console.log('Server running on port 3000'));
 
-console.log("Server running at http://" + host + ":" + port + "/");
+// console.log("Server running at http://" + host + ":" + port + "/");
