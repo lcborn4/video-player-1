@@ -4,8 +4,8 @@ var http = require('http'),
 
 var path = "../video/AI_Battle1.mp4";
 
-var port = 8888;
-var host = "localhost";
+var port = 3000;
+// var host = "localhost";
 
 http.createServer(function (req, res) {
 
@@ -34,6 +34,6 @@ http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Length': total, 'Content-Type': 'video/mp4' });
     fs.createReadStream(path).pipe(res);
   }
-}).listen(port, host);
+}).listen(port, () => console.log('Server running on port 3000'));
 
 console.log("Server running at http://" + host + ":" + port + "/");
